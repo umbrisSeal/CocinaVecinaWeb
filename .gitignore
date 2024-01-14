@@ -1,0 +1,6 @@
+
+## Ignore personal testing files.
+presentation.md
+
+## Ignore enviroment variable files .env
+*.env
