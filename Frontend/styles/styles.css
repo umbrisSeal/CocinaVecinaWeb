@@ -15,6 +15,10 @@ p, h1 {
     margin: 0px;
 }
 
+h2 {
+    margin: 0px 0px 20px 0px;
+}
+
 
 /*
 =============================
@@ -100,7 +104,7 @@ Añadir una etiqueta de header-sticky para saber cuando cambiar el formato del h
     font-family: var(--fuente-open);
 }
 
-.titulo {
+.cita-principal {
     font-size: 40px;
     text-align: center;
 }
@@ -110,4 +114,74 @@ Añadir una etiqueta de header-sticky para saber cuando cambiar el formato del h
     font-style: italic;
     text-align: end;
     margin-right: 20px;
+}
+
+
+
+/*
+=============================
+    ESTILOS HOME PAGE
+=============================
+*/
+
+.contenedor-doble {
+    padding: 30px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;  /* Reducir, en caso de que se vea mal en responsive */
+}
+
+.fondo-comida {
+    background-image: url("/images/fondo/comida-rojo.png");
+    background-repeat: repeat;
+    background-size: 10%;
+}
+
+.titulo {
+    font-family: var(--fuente-open);
+    text-transform: uppercase;
+    font-size: 28px;
+    color: white;
+}
+
+.contenido {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.contenido-texto {
+    font-family: var(--fuente-maru);
+    font-size: 16px;
+    color: white;
+}
+
+.contenido-texto p {
+    margin: 20px 0px;
+}
+
+.boton1 {
+    font-family: var(--fuente-maru);
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: var(--amarillo);
+    color: var(--rojo);
+    border: 2px solid var(--amarillo);
+    border-radius: 8px;
+    padding: 15px 45px;
+    cursor: pointer;
+
+    transition: background-color 0.3s ease-in-out;
+}
+
+.boton1:hover {
+    background-color: var(--rojo);
+    color: var(--amarillo);
+}
+
+
+
+.prueba {
+    background-color: #F4A91D;
 }
