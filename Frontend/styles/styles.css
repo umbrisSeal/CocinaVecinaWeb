@@ -8,14 +8,12 @@
     --rojo: #C62427;
     --amarillo: #F4A91D;
     --fuente-maru: 'Zen Maru Gothic', serif;    /* Incluye: 500, 700 y 900 */
+    --fuente-open: 'Open Sans', sans-serif;     /* Incluye: 500, italic-500, 700 */
 }
 
-p {
+p, h1 {
     margin: 0px;
-    font-family: var(--fuente-maru);
-    font-weight: 500;
 }
-
 
 
 /*
@@ -72,10 +70,44 @@ header nav a:not(:last-child):hover {
     border: 2px solid white;
 }
 
-
-
 /*
 TODO:
 Añadir una etiqueta de header-sticky para saber cuando cambiar el formato del header al bajar.
-
 */
+
+
+
+/*
+=============================
+    ESTILOS MAIN
+=============================
+*/
+
+#amigos {
+    height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/fotos/amigos.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cita-centrada {
+    color: white;
+    margin: 0px 80px;       /* Reducir margen en dispositivos mobiles. */
+    font-family: var(--fuente-open);
+}
+
+.titulo {
+    font-size: 40px;
+    text-align: center;
+}
+
+.cita-autor {
+    font-size: 20px;
+    font-style: italic;
+    text-align: end;
+    margin-right: 20px;
+}
