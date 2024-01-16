@@ -1,3 +1,81 @@
-h1 {
-    color: red;
+/*
+=============================
+    ESTILOS GLOBALES
+=============================
+*/
+
+:root {
+    --rojo: #C62427;
+    --amarillo: #F4A91D;
+    --fuente-maru: 'Zen Maru Gothic', serif;    /* Incluye: 500, 700 y 900 */
 }
+
+p {
+    margin: 0px;
+    font-family: var(--fuente-maru);
+    font-weight: 500;
+}
+
+
+
+/*
+=============================
+    ESTILOS HEADER
+=============================
+*/
+
+header {
+    background-color: var(--rojo);
+    padding: 10px;
+    text-transform: uppercase;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;  /* Añadir tamaño dinamico responsive. */
+}
+
+header nav a {
+    text-decoration: none;
+    font-family: var(--fuente-maru);
+    font-weight: 700;
+    color: white;
+    font-size: 16px;
+    padding: 15px 10px 15px 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out
+    /* ease, linear, ease-out, ease-in, ease-in-out */
+}
+
+header nav a:not(:last-child):hover {
+    border-radius: 8px;
+    background-color: #D4595B;
+}
+
+.boton-login {
+    color: var(--rojo);
+    background-color: var(--amarillo);
+
+    border: 2px solid var(--amarillo);
+}
+
+.boton-login:hover {
+    background-color: transparent;
+    color: white;
+
+    box-sizing: border-box;
+    border: 2px solid white;
+}
+
+
+
+/*
+TODO:
+Añadir una etiqueta de header-sticky para saber cuando cambiar el formato del header al bajar.
+
+*/
