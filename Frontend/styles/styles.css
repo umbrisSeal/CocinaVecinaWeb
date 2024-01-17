@@ -284,7 +284,6 @@ Añadir una etiqueta de header-sticky para saber cuando cambiar el formato del h
 .contenido-imagen {
     flex-grow: 1;
     max-height: 350px;
-    text-align: end;
 }
 
 .contenido-imagen img {
@@ -297,8 +296,13 @@ Añadir una etiqueta de header-sticky para saber cuando cambiar el formato del h
     padding-right: 75px;
 }
 
+.texto-derecha {
+    text-align: end;
+}
 
-
+.texto-izquierda {
+    text-align: start;
+}
 
 
 
