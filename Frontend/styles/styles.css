@@ -196,21 +196,21 @@ Añadir una etiqueta de header-sticky para saber cuando cambiar el formato del h
 }
 
 .texto-enfoque1 {
-    font-family: var(--fuente-open);
+    font-family: var(--fuente-maru);
     font-weight: 700;
     font-size: 24px;
     text-transform: uppercase;
 }
 
 .texto-enfoque2 {
-    font-family: var(--fuente-open);
+    font-family: var(--fuente-maru);
     font-weight: 700;
     font-size: 60px;
     text-transform: uppercase;
 }
 
 .texto-enfoque3 {
-    font-family: var(--fuente-open);
+    font-family: var(--fuente-maru);
     font-size: 16px;
 }
 
@@ -218,6 +218,11 @@ Añadir una etiqueta de header-sticky para saber cuando cambiar el formato del h
     font-family: var(--fuente-roboto);
     font-size: 80px;
 }
+
+.contenedor {
+    padding: 30px 20px;
+}
+
 
 
 
