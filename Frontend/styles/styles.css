@@ -9,6 +9,7 @@
     --amarillo: #F4A91D;
     --fuente-maru: 'Zen Maru Gothic', serif;    /* Incluye: 500, 700 y 900 */
     --fuente-open: 'Open Sans', sans-serif;     /* Incluye: 500, italic-500, 700 */
+    --fuente-roboto: 'Roboto Mono', monospace;  /* Incluye: 500 */
 }
 
 p, h1 {
@@ -178,6 +179,44 @@ Añadir una etiqueta de header-sticky para saber cuando cambiar el formato del h
 .boton1:hover {
     background-color: var(--rojo);
     color: var(--amarillo);
+}
+
+#multitud {
+    background-image: url('/images/fotos/multitud.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 30px;
+
+}
+
+#multitud p {
+    margin: 25px 0px;
+}
+
+.texto-enfoque1 {
+    font-family: var(--fuente-open);
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.texto-enfoque2 {
+    font-family: var(--fuente-open);
+    font-weight: 700;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.texto-enfoque3 {
+    font-family: var(--fuente-open);
+    font-size: 16px;
+}
+
+#contador {
+    font-family: var(--fuente-roboto);
+    font-size: 80px;
 }
 
 
