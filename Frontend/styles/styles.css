@@ -12,6 +12,11 @@
     --fuente-roboto: 'Roboto Mono', monospace;  /* Incluye: 500 */
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 p, h1 {
     margin: 0px;
 }
@@ -20,7 +25,7 @@ p {
     line-height: 1.8;
 }
 
-h2 {
+h2, h3 {
     margin: 0px 0px 20px 0px;
 }
 
@@ -62,6 +67,14 @@ header nav a {
 header nav a:not(:last-child):hover {
     border-radius: 8px;
     background-color: #D4595B;
+}
+
+.logo-header {
+    height: 40px;
+}
+
+.logo {
+    height: 60px;
 }
 
 .boton-login {
@@ -311,10 +324,72 @@ Añadir una etiqueta de header-sticky para saber cuando cambiar el formato del h
 }
 
 
+/*
+=============================
+    ESTILOS RESEÑAS
+=============================
+*/
 
 
 
 
+
+/*
+=============================
+    ESTILOS FOOTER
+=============================
+*/
+
+.redes {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.redes img {
+    height: 26px;
+}
+
+.redes img:last-child {
+    /* Imagen de Twitter no concuerda con las dimensiones solicitadas. */
+    height: 20px;
+}
+
+.contacto {
+    margin-top: 15px;
+}
+
+.footer-superior {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.subtitulo {
+    color: white;
+    font-family: var(--fuente-maru);
+    text-align: center;
+}
+
+.footer-navegacion {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px 0px;
+    font-size: 16px;
+}
+
+.footer-navegacion a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.mapasitio {
+    display: flex;
+    gap: 0px 35px;
+    margin-right: 35px;
+}
 
 
 .prueba {
