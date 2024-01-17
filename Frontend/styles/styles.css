@@ -223,6 +223,25 @@ Añadir una etiqueta de header-sticky para saber cuando cambiar el formato del h
     padding: 30px 20px;
 }
 
+.fondo-rojo {
+    background-color: var(--rojo);
+}
+
+.fotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fotos img {
+    filter: brightness(40%);
+    
+    transition: filter 0.3s ease-in-out;
+}
+
+.fotos img:hover {
+    filter: brightness(100%);
+}
 
 
 
