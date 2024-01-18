@@ -354,6 +354,14 @@ Añadir una etiqueta de header-sticky para saber cuando cambiar el formato del h
     cursor: pointer;
 }
 
+.seleccionado {
+    background-color: var(--gris);
+}
+
+#circulo2 {
+    background-color: var(--gris);
+}
+
 .boton-arrow {
     background-color: transparent;
     height: 90px;
@@ -383,10 +391,6 @@ Añadir una etiqueta de header-sticky para saber cuando cambiar el formato del h
 
 #boton-arrow2{
     rotate: 90deg;
-}
-
-#circulo2 {
-    background-color: var(--gris);
 }
 
 .critica {
