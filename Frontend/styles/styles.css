@@ -311,11 +311,11 @@ Añadir una etiqueta de header-sticky para saber cuando cambiar el formato del h
 }
 
 .texto-derecha {
-    text-align: end;
+    text-align: start;
 }
 
 .texto-izquierda {
-    text-align: start;
+    text-align: end;
 }
 
 .asociados {
