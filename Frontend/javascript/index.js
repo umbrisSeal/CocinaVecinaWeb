@@ -7,8 +7,6 @@ const botonAnterior = document.getElementById('boton-arrow1');
 const botonSiguiente = document.getElementById('boton-arrow2');
 const botonesPaginacion = document.getElementsByClassName('circulo');
 
-console.log(botonesPaginacion[2]);
-
 const agregarComas = (numero) => {
     // Cambia el numero dado a notacion coma.
     const regexComas = /\B(?=(\d{3})+(?!\d))/g;
@@ -28,9 +26,9 @@ const efectoContador = (numeroFinal) => {
     const iFinal = numeroFinal;      
     let contador = setInterval( () => {
         i += 331;
-        document.getElementById("contador").innerHTML = `⭐ ${agregarComas(i)} ⭐`;
+        document.getElementById("contador").innerHTML = `${agregarComas(i)}`;
         if (i >= iFinal) {
-            document.getElementById("contador").innerHTML = `⭐ ${agregarComas(iFinal)} ⭐`;
+            document.getElementById("contador").innerHTML = `${agregarComas(iFinal)}`;
             clearInterval(contador);
         }
     }, Math.floor(intervaloMs / iFinal));
@@ -185,3 +183,51 @@ setInterval( () => {
 }, 5000)
 
 
+
+/*
+=====================
+    PRUEBAS
+=====================
+*/
+
+
+/*
+
+Tamaños
+
+Small Phones - less than 600px
+Medium tablers - 600px - 1023 px
+Large PCs more than 1024px
+
+My large screensize: 1536px
+Medium: 766px
+
+
+Pictures in half-half presenting damange at 865px, put up and down.
+Reviews start presenting wird behaivoir in 762px put up image.
+Asociados starts to get clocky at 762px
+footer clocky at 762px
+Counter fails at 723px
+header fails in 678px
+
+
+
+Set changes at 880px (Adaptable for tablets).
+
+Set next changes for 740px
+    Header structure fully changes.
+
+*/
+
+/*
+Git commits:
+ - Hide expirience photo section after 1024px
+ - Added responsive behavior to half content half image sections.
+ be-ha-vi-or
+ - Added responsive behavior to associates section.
+ - Added responsive behavior to footer section.
+ - Changed review section, now everything is centered with respect the review text.
+ - Added responsive behavior to review sections for tablets and small phones.
+ - Added responsive behavior to counter section.
+
+*/
