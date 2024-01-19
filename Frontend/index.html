@@ -15,20 +15,44 @@
 
     <title>Cocina Vecina</title>
     <script src="javascript/index.js" defer></script>
+    <script src="javascript/header.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <a href="index.html">
-            <img class="logo-header" src="images/marcas/cocina.png" alt="Logo Cocina Vecina">
-        </a>
-        <nav>
-            <a href="/menu.html"> Menu </a>
-            <a href="/sucursales.html"> Sucursales </a>
-            <a href="/facturacion.html"> Facturacion </a>
-            <a href="/nosotros.html"> Nosotros </a>
-            <a href="/login.html" class="boton-login"> Login </a>
-        </nav>
+    <header class="sticky">
+        <div class="header-pc">
+            <!-- Para PCs -->
+            <a href="index.html">
+                <img class="logo-header" src="images/marcas/cocina.png" alt="Logo Cocina Vecina">
+            </a>
+            <nav>
+                <a href="/menu.html"> Menu </a>
+                <a href="/sucursales.html"> Sucursales </a>
+                <a href="/facturacion.html"> Facturacion </a>
+                <a href="/nosotros.html"> Nosotros </a>
+                <a href="/login.html" class="boton-login"> Login </a>
+            </nav>
+        </div>
+        <div class="header-mobil">
+            <!-- Para dispositivos mobiles -->
+            <img id="boton-opciones" src="/images/iconos/opciones.png" alt="Opciones">
+            <a href="/index.html">
+                <img src="/images/iconos/cocina-vecina.png" alt="Cocina Vecina">
+            </a>
+            <a href="/login.html">
+                <img src="/images/iconos/usuario.png" alt="Login">
+            </a>
+        </div>
+        <div id="menu-desplegable" class="ocultar">
+            <nav class="navegacion-mobil">
+                <a href="/menu.html"> Menu </a>
+                <a href="/sucursales.html"> Suscripciones </a>
+                <a href="/facturacion.html"> Facturacion </a>
+                <a href="/sucursales.html"> Sucursales </a>
+                <a href="/nosotros.html"> Nosotros </a>
+                <a href="/login.html" class="boton-login"> Login </a>
+            </nav>
+        </div>
     </header>
 
     <main id="amigos">
