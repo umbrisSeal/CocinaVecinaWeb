@@ -858,3 +858,29 @@ header nav a:not(:last-child):hover {
     color: white;
     padding: 8px;
 }
+.prueba {
+    background-color: #C62427;
+}
+
+
+/*
+=============================
+    PAGINA AVISO DE PRIVACIDAD
+=============================
+*/
+
+.privacidad {
+    color: black;
+}
+
+.privacidad h1 {
+    font-family: var(--fuente-open);
+    text-align: center;
+}
+
+.privacidad p {
+    font-family: var(--fuente-maru);
+    
+    margin: 20px 50px;
+    line-height: 1.4;
+}
