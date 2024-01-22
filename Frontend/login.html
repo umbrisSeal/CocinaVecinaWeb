@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;0,700;1,500&family=Roboto+Mono:wght@500&family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <title>Cocina Vecina</title>
+    <script src="javascript/index.js" defer></script>
+    <script src="javascript/header.js" defer></script>
+</head>
+
+<body>
+    <header class="sticky">
+        <div class="header-pc">
+            <!-- Para PCs -->
+            <a href="index.html">
+                <img class="logo-header" src="images/marcas/cocina.png" alt="Logo Cocina Vecina">
+            </a>
+            <nav>
+                <a href="/menu.html"> Menu </a>
+                <a href="/sucursales.html"> Sucursales </a>
+                <a href="/facturacion.html"> Facturacion </a>
+                <a href="/nosotros.html"> Nosotros </a>
+                <a href="/login.html" class="boton-login"> Login </a>
+            </nav>
+        </div>
+        <div class="header-mobil">
+            <!-- Para dispositivos mobiles -->
+            <img id="boton-opciones" src="/images/iconos/opciones.png" alt="Opciones">
+            <a href="/index.html">
+                <img src="/images/iconos/cocina-vecina.png" alt="Cocina Vecina">
+            </a>
+            <a href="/login.html">
+                <img src="/images/iconos/usuario.png" alt="Login">
+            </a>
+        </div>
+        <div id="menu-desplegable" class="ocultar">
+            <nav class="navegacion-mobil">
+                <a href="/menu.html"> Menu </a>
+                <a href="/sucursales.html"> Suscripciones </a>
+                <a href="/facturacion.html"> Facturacion </a>
+                <a href="/sucursales.html"> Sucursales </a>
+                <a href="/nosotros.html"> Nosotros </a>
+                <a href="/login.html" class="boton-login"> Login </a>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="fondo-login contenedor">
+
+        <div class="contenedor-login">
+            <h1 class="login-titulo"> Inicia Sesion </h1>
+            <form action='BACKEND_URL' method="get" class="login-datos">
+                <div class="login-mensaje ocultar">
+                    <p>  </p>
+                    <!-- El usuario o contraseña es incorrecto. -->
+                    <!-- Ha ocurrido un error, por favor intente intente mas tarde. -->
+                    <!-- La clave de acceso es incorrecta o ya ha expirado. -->
+                    <!-- El dominio de su correo electronico no es aceptado. -->
+                </div>
+                <div>
+                    <label for="fusuario"> Correo Electronico: </label>
+                    <input
+                        class="datos"
+                        name="fusuario"
+                        type="text"
+                        id="fusuario"
+                        placeholder="Email Registrado"
+                        maxlength="50"
+                        required
+                    >
+                </div>
+                <div>
+                    <label for="fpassword"> Contraseña: </label>
+                    <input
+                        class="datos"
+                        name="fpassword"
+                        type="password"
+                        id="fpassword"
+                        placeholder="Contraseña"
+                        required
+                    >
+                </div>
+                <input type="submit" value="Iniciar Sesion" class="boton3">
+
+            </form>
+            <div class="login-links">
+                <p> ¿Aún no tienes una cuenta? Crea una <a href="/signin.html"> aqui</a>. </p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="fondo-rojo contenedor">
+        <div class="footer-superior">
+            <div>
+                <a href="index.html">
+                    <img class="logo" src="/images/marcas/cocina.png" alt="Logo Cocina Vecina">
+                </a>
+            </div>
+            <div class="mapasitio">
+                <section>
+                    <h3 class="subtitulo"> Productos </h3>
+                    <nav class="contenido-texto footer-navegacion">
+                        <a href="#"> Menu </a>
+                        <a href="#"> Suscripción </a>
+                        <a href="#"> Facturación </a>
+                        <a href="#"> Eventos </a>
+                    </nav>
+                </section>
+                <section>
+                    <h3 class="subtitulo"> Nosotros </h3>
+                    <nav class="contenido-texto footer-navegacion">
+                        <a href="#"> Sucursales </a>
+                        <a href="#"> Nosotros </a>
+                        <a href="#"> FAQ </a>
+                        <a href="#"> Nuestro Compromiso </a>
+                    </nav>
+                </section>
+                <section>
+                    <h3 class="subtitulo"> Contacto </h3>
+                    <nav class="contenido-texto footer-navegacion">
+                        <a href="#"> Contactanos </a>
+                        <a href="#"> Franquisias </a>
+                        <a href="#"> Empleo </a>
+                        <a href="#"> Aviso de Privacidad </a>
+                    </nav>
+                </section>
+            </div>
+        </div>
+        <div class="contacto">
+            <div class="redes">
+                <img src="/images/redes/facebook.png" alt="Facebook">
+                <img src="/images/redes/whatsapp.png" alt="WhatsApp">
+                <img src="/images/redes/twitter.png" alt="Twitter">
+            </div>
+            <p class="contenido-texto"> soporte@cocinavecina.com </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
