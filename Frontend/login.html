@@ -60,12 +60,13 @@
         <div class="contenedor-login">
             <h1 class="login-titulo"> Inicia Sesion </h1>
             <form action='BACKEND_URL' method="get" class="login-datos">
-                <div class="login-mensaje ocultar">
-                    <p>  </p>
+                <div id="login-mensaje" class="ocultar">
+                    <p> </p>
                     <!-- El usuario o contraseña es incorrecto. -->
                     <!-- Ha ocurrido un error, por favor intente intente mas tarde. -->
                     <!-- La clave de acceso es incorrecta o ya ha expirado. -->
                     <!-- El dominio de su correo electronico no es aceptado. -->
+                    <!-- Por favor, rellene todos los campos. -->
                 </div>
                 <div>
                     <label for="fusuario"> Correo Electronico: </label>
@@ -90,7 +91,7 @@
                         required
                     >
                 </div>
-                <input type="submit" value="Iniciar Sesion" class="boton3">
+                <button type="button" class="boton3" id="boton-login"> Iniciar Sesion </button>
 
             </form>
             <div class="login-links">

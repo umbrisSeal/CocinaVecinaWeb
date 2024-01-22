@@ -759,7 +759,7 @@ header nav a:not(:last-child):hover {
     margin-bottom: 25px;
 }
 
-.login-mensaje {
+#login-mensaje {
     font-size: 14px;
     text-align: center;
     border-radius: 6px;
