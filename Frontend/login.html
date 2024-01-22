@@ -100,52 +100,14 @@
 
     </main>
 
-    <footer class="fondo-rojo contenedor">
-        <div class="footer-superior">
-            <div>
-                <a href="index.html">
-                    <img class="logo" src="/images/marcas/cocina.png" alt="Logo Cocina Vecina">
-                </a>
-            </div>
-            <div class="mapasitio">
-                <section>
-                    <h3 class="subtitulo"> Productos </h3>
-                    <nav class="contenido-texto footer-navegacion">
-                        <a href="#"> Menu </a>
-                        <a href="#"> Suscripción </a>
-                        <a href="#"> Facturación </a>
-                        <a href="#"> Eventos </a>
-                    </nav>
-                </section>
-                <section>
-                    <h3 class="subtitulo"> Nosotros </h3>
-                    <nav class="contenido-texto footer-navegacion">
-                        <a href="#"> Sucursales </a>
-                        <a href="#"> Nosotros </a>
-                        <a href="#"> FAQ </a>
-                        <a href="#"> Nuestro Compromiso </a>
-                    </nav>
-                </section>
-                <section>
-                    <h3 class="subtitulo"> Contacto </h3>
-                    <nav class="contenido-texto footer-navegacion">
-                        <a href="#"> Contactanos </a>
-                        <a href="#"> Franquisias </a>
-                        <a href="#"> Empleo </a>
-                        <a href="#"> Aviso de Privacidad </a>
-                    </nav>
-                </section>
-            </div>
-        </div>
-        <div class="contacto">
-            <div class="redes">
-                <img src="/images/redes/facebook.png" alt="Facebook">
-                <img src="/images/redes/whatsapp.png" alt="WhatsApp">
-                <img src="/images/redes/twitter.png" alt="Twitter">
-            </div>
-            <p class="contenido-texto"> soporte@cocinavecina.com </p>
-        </div>
+    <footer class="fondo-rojo mini-footer">
+        <p> Todos los derechos reservados. Cocina Vecina &reg; <span id="año"></span> </p>
     </footer>
+
+    <script>
+        /* No alineado a la patente. */
+        document.getElementById('año').textContent = new Date().getFullYear();
+    </script>
 
 </body>
 

@@ -845,3 +845,16 @@ header nav a:not(:last-child):hover {
     text-decoration: underline;
 }
 
+
+/*
+=============================
+    ESTILOS MINI-FOOTER
+=============================
+*/
+
+.mini-footer {
+    text-align: center;
+    font-family: var(--fuente-maru);
+    color: white;
+    padding: 8px;
+}
