@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -58,7 +59,7 @@
     <main class="fondo-login contenedor">
 
         <div class="contenedor-login">
-            <h1 class="login-titulo"> Inicia Sesion </h1>
+            <h1 class="login-titulo"> Registrate </h1>
             <form action='BACKEND_URL' method="get" class="login-datos">
                 <div id="login-mensaje" class="ocultar">
                     <p> </p>
@@ -67,6 +68,18 @@
                     <!-- La clave de acceso es incorrecta o ya ha expirado. -->
                     <!-- El dominio de su correo electronico no es aceptado. -->
                     <!-- Por favor, rellene todos los campos. -->
+                </div>
+                <div>
+                    <label for="fusuario"> Clave de Acceso: </label>
+                    <input
+                        class="datos"
+                        name="clave-acceso"
+                        type="text"
+                        id="clave-acceso"
+                        placeholder="Clave"
+                        maxlength="8"
+                        required
+                    >
                 </div>
                 <div>
                     <label for="fusuario"> Correo Electronico: </label>
@@ -91,11 +104,11 @@
                         required
                     >
                 </div>
-                <button type="button" class="boton3" id="boton-login"> Iniciar Sesion </button>
+                <button type="button" class="boton3" id="boton-login"> Crear Cuenta </button>
 
             </form>
             <div class="login-links">
-                <p> ¿Aún no tienes una cuenta? Crea una <a href="/registro.html"> aqui</a>. </p>
+                <p> ¿Ya tienes una cuenta? Inicia sesión <a href="/login.html"> aqui</a>. </p>
             </div>
         </div>
 
@@ -113,3 +126,11 @@
 </body>
 
 </html>
+
+
+
+<!-- Changed link to registro.html instead of signin.html 
+
+    Added registro page.
+
+-->
