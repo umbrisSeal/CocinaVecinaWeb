@@ -18,7 +18,7 @@ a {
     color: inherit;
 }
 
-p, h1 {
+p, h1, h4 {
     margin: 0px;
 }
 
@@ -622,4 +622,76 @@ header nav a:not(:last-child):hover {
     .mapasitio {
         margin: 0px;
     }
+}
+
+
+/*
+=============================
+    OTRAS PAGINAS
+=============================
+*/
+
+#banner-sucursales {
+    background-image: url('/images/banners/sucursales.png');
+}
+
+.banner {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    text-transform: uppercase;
+    height: 200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h1 {
+    color: white;
+    font-family: var(--fuente-open);
+}
+
+.texto-gris p {
+    font-family: var(--fuente-maru);
+    color: #1F1F1F;
+}
+
+/*
+Zen - med - 24px
+1F1F1F
+
+Tituloo open black FFFF 40px
+*/
+
+.sucursales {
+    font-family: var(--fuente-maru);
+    margin: 40px 40px;
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.sucursales img {
+    height: 65px;
+    width: auto;
+}
+
+.sucursal {
+    text-align: center;
+}
+
+.sucursal h4 {
+    font-weight: 900;
+    margin: 8px 0px;
+}
+
+.sucursal p {
+    line-height: 1.4;
+}
+
+.email {
+    font-size: 14px;
 }

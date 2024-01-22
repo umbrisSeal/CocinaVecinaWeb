@@ -1,6 +1,7 @@
 
 ## Ignore personal testing files.
 presentation.md
+somecommands.txt
 
 ## Ignore enviroment variable files .env
 *.env
