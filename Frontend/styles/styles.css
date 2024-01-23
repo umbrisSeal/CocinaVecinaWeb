@@ -633,12 +633,12 @@ header nav a:not(:last-child):hover {
 
 #banner-sucursales {
     background-image: url('/images/banners/sucursales.png');
+    background-position: top;
 }
 
 .banner {
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
     text-transform: uppercase;
     height: 200px;
 
@@ -883,4 +883,57 @@ header nav a:not(:last-child):hover {
     
     margin: 20px 50px;
     line-height: 1.4;
+}
+
+
+/*
+=============================
+    PAGINA FAQ
+=============================
+*/
+
+#banner-faq {
+    background-image: url('/images/banners/faq.png');
+    background-position: center;
+}
+
+.contenedor-faq {
+    width: 90%;
+    margin: 35px auto;
+
+    display: flex;
+    flex-direction: column;
+
+    user-select: none;
+}
+
+.elemento-faq {
+    font-family: var(--fuente-maru);
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.pregunta-faq {
+    display: flex;
+    align-items: center;
+    text-indent: 15px;
+
+    cursor: pointer;
+}
+
+.pregunta-faq img {
+    width: 26px;
+}
+
+.pregunta-faq h2 {
+    margin: 0px;
+}
+
+.respuesta-faq {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.rotar {
+    rotate: 45deg;
 }
