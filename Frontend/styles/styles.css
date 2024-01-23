@@ -645,6 +645,7 @@ header nav a:not(:last-child):hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .banner h1 {
@@ -858,9 +859,6 @@ header nav a:not(:last-child):hover {
     color: white;
     padding: 8px;
 }
-.prueba {
-    background-color: #C62427;
-}
 
 
 /*
@@ -936,4 +934,157 @@ header nav a:not(:last-child):hover {
 
 .rotar {
     rotate: 45deg;
+}
+
+/*
+=============================
+    PAGINA SUSCRIPCIONES
+=============================
+*/
+
+#banner-planes {
+    background-image: url('/images/banners/planes.png');
+    background-position: center;
+}
+
+.presentacion-planes {
+    color: black;
+    text-align: center;
+}
+
+.presentacion-planes h2 {
+    font-family: var(--fuente-open);
+    text-transform: uppercase;
+}
+
+.presentacion-planes p {
+    font-family: var(--fuente-maru);
+}
+
+.planes {
+    width: 95%;
+    margin: 20px auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.plan {
+    background-color: white;
+    border: 3px solid var(--amarillo);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 0px 12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    /* Temporal */
+    height: 560px;
+    width: 340px;
+
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.plan:hover {
+    background-color: var(--amarillo);
+}
+
+.plan-detalles {
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.plan-titulo {
+    font-family: var(--fuente-open);
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 0px;
+}
+
+.plan-duracion {
+    font-family: var(--fuente-open);
+    font-weight: 700;
+    font-size: 50px;
+    margin: 0px;
+}
+
+.plan-info {
+    font-family: var(--fuente-maru);
+    font-size: 14px;
+}
+
+.plan-precio {
+    font-family: var(--fuente-open);
+    color: rgb(0, 165, 0);
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.plan-beneficios {
+    font-family: var(--fuente-maru);
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.plan-beneficios p {
+    font-weight: 700;
+}
+
+.plan-beneficios ul {
+    list-style-type: circle;
+    list-style-position: outside;
+    margin: 8px 0px;
+    padding-left: 14px;
+}
+
+.plan-beneficios li {
+    margin: 6px 0px;
+}
+
+.plan-beneficios b {
+    /* Usar maximo disponible. */
+    font-weight: 900;
+}
+
+.boton4 {
+    margin-bottom: 20px;
+    width: 80%;
+    margin: 20px auto;
+
+    font-family: var(--fuente-maru);
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: var(--amarillo);
+    color: white;
+    border: 2px solid var(--amarillo);
+    border-radius: 8px;
+    padding: 15px 0px;
+
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.plan:hover > .boton4 {
+    color: white;
+    background-color: var(--amarillo);
+    border-color: white;
+}
+
+.beneficios {
+    background-color: aqua;
+}
+
+.beneficio {
+    background-color: #D4595B;
+}
+
+.texto-gris {
+    /* Verificar el color Gris, parece no verse. */
+    color: var(--gris);
+    font-family: var(--fuente-maru);
 }
