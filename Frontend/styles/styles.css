@@ -1099,3 +1099,112 @@ header nav a:not(:last-child):hover {
     color: #1f1f1f;
     font-family: var(--fuente-maru);
 }
+
+
+
+/*
+=============================
+    ESTILOS EMPLEO
+=============================
+*/
+
+#banner-empleo {
+    background-image: url('/images/banners/empleo.png');
+    background-position: center;
+}
+
+.empleos {
+    display: flex;
+    height: 420px;
+}
+
+.empleo-filtro {
+    width: 20%;
+    padding: 10px;
+
+    border-right: 1px solid black;
+}
+
+.empleo {
+    width: 80%;
+    padding: 20px;
+
+    border-left: 1px solid black;
+}
+
+@media (max-width: 960px) {
+    .empleo-filtro {
+        display: none;
+    }
+    .empleo {
+        width: 100%;
+    }
+}
+
+.filtro-titulo {
+    font-family: var(--fuente-maru);
+    margin: 0px;
+}
+
+#filtros {
+    font-family: var(--fuente-maru);
+}
+
+.filtro {
+    margin: 8px 0px;
+}
+
+.empleo h2 {
+    font-family: var(--fuente-open);
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.empleo-mensaje {
+    font-family: var(--fuente-maru);
+    color: white;
+    background-color: #b82325;
+    padding: 6px;
+    margin: 14px 0px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Solo hay una tabla en toda la pagina. */
+
+table {
+    width: 100%;
+    font-family: var(--fuente-maru);
+    border-collapse: collapse;
+}
+
+th {
+    padding: 8px;
+    background-color: var(--gris);
+    font-size: 20px;
+}
+
+td {
+    padding: 6px;
+    font-size: 16px;
+
+    text-transform: capitalize;
+}
+
+.boton5 {
+    color: var(--rojo);
+    background-color: var(--amarillo);
+    border: 1px solid var(--amarillo);
+    border-radius: 15px;
+    padding: 6px 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    /* No agregar transision suave. */
+}
+
+.boton5:hover {
+    background-color: #f6bd53;
+}
