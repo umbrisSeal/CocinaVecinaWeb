@@ -982,7 +982,7 @@ header nav a:not(:last-child):hover {
     justify-content: space-between;
 
     /* Temporal */
-    height: 560px;
+    height: 600px;
     width: 340px;
 
     cursor: pointer;
@@ -1036,9 +1036,11 @@ header nav a:not(:last-child):hover {
 
 .plan-beneficios ul {
     list-style-type: circle;
-    list-style-position: outside;
+    list-style-position: inside;
+    list-style-image: url('/images/iconos/mini-tenedor.png');
+
     margin: 8px 0px;
-    padding-left: 14px;
+    padding-left: 8px;
 }
 
 .plan-beneficios li {
