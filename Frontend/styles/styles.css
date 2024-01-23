@@ -1076,15 +1076,24 @@ header nav a:not(:last-child):hover {
 }
 
 .beneficios {
-    background-color: aqua;
+    margin: 30px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .beneficio {
-    background-color: #D4595B;
+    width: 200px;
+    text-align: center;
+}
+
+.beneficio img {
+    height: 80px;
 }
 
 .texto-gris {
     /* Verificar el color Gris, parece no verse. */
-    color: var(--gris);
+    color: #1f1f1f;
     font-family: var(--fuente-maru);
 }
