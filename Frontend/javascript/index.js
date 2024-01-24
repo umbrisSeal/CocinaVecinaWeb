@@ -3,6 +3,7 @@ let contadorIniciado = false;
 let criticaActual = 1;
 let usuarioCambioPagina = false;
 
+const critica = document.getElementById('contenedor-critica');
 const botonAnterior = document.getElementById('boton-arrow1');
 const botonSiguiente = document.getElementById('boton-arrow2');
 const botonesPaginacion = document.getElementsByClassName('circulo');
@@ -23,9 +24,9 @@ const efectoContador = (numeroFinal) => {
     contadorIniciado = true;
     const intervaloMs = 3000;
     let i = 0;
-    const iFinal = numeroFinal;      
+    const iFinal = numeroFinal;
     let contador = setInterval( () => {
-        i += 331;
+        i += 123;
         document.getElementById("contador").innerHTML = `${agregarComas(i)}`;
         if (i >= iFinal) {
             document.getElementById("contador").innerHTML = `${agregarComas(iFinal)}`;
@@ -48,6 +49,36 @@ const mostrarCritica = (id) => {
     criticaImagen.setAttribute('src', datosCritica.imagenUrl);
 }
 
+const cambiarCritica = (incrementar, criticaSeleccionada = 0) => {
+    critica.style.opacity = 0;
+
+    setTimeout( () => {
+        if (criticaSeleccionada != 0) {
+            // Seleccionar una critica especifica.
+            botonesPaginacion[criticaActual-1].classList.remove('seleccionado');
+            criticaActual = criticaSeleccionada;
+            botonesPaginacion[criticaSeleccionada-1].classList.add('seleccionado');
+            mostrarCritica(criticaActual);
+        } else {
+            if (incrementar) {
+                // Mostrar la siguiente critica.
+                botonesPaginacion[criticaActual-1].classList.remove('seleccionado');
+                criticaActual = criticaActual < 6 ? criticaActual+1 : 1;
+                botonesPaginacion[criticaActual-1].classList.add('seleccionado');
+                mostrarCritica(criticaActual);
+            } else {
+                // Mostrar la critica anterior.
+                botonesPaginacion[criticaActual-1].classList.remove('seleccionado');
+                criticaActual = criticaActual > 1 ? criticaActual-1 : 6;
+                botonesPaginacion[criticaActual-1].classList.add('seleccionado');
+                mostrarCritica(criticaActual);
+            }
+        }
+
+        // Tiempo de setTimeout debe de concordar con CSS .desvanecer-js
+        critica.style.opacity = 1;
+    }, 800);
+}
 
 
 
@@ -124,8 +155,8 @@ mostrarCritica(criticaActual);
 
 window.onscroll = () => {
     // Ejecutar efecto contador cuando el usuario pueda ver dicha seccion.
-    // 700px?
-    if (window.scrollY >= 700 && !contadorIniciado) efectoContador(138657); /* Solicitar registro del backend. */
+    if (window.scrollY >= 600 && !contadorIniciado) efectoContador(14657); 
+    /* Solicitar registro del backend. */
 }
 
 
@@ -134,28 +165,19 @@ window.onscroll = () => {
 Array.from(botonesPaginacion).forEach( (boton, index) => {
     boton.addEventListener('click', (event) => {
         const nBoton = index+1;
-        botonesPaginacion[criticaActual-1].classList.remove('seleccionado');
-        botonesPaginacion[nBoton-1].classList.add('seleccionado');
-        criticaActual = nBoton;
         usuarioCambioPagina = true;
-        mostrarCritica(criticaActual);
+        cambiarCritica(true, nBoton);
     })
 })
 
 botonAnterior.addEventListener('click', (event) => {
-    botonesPaginacion[criticaActual-1].classList.remove('seleccionado');
-    criticaActual = criticaActual > 1 ? criticaActual-1 : 6;
-    botonesPaginacion[criticaActual-1].classList.add('seleccionado');
     usuarioCambioPagina = true;
-    mostrarCritica(criticaActual);
+    cambiarCritica(false);
 })
 
 botonSiguiente.addEventListener('click', (event) => {
-    botonesPaginacion[criticaActual-1].classList.remove('seleccionado');
-    criticaActual = criticaActual < 6 ? criticaActual+1 : 1;
-    botonesPaginacion[criticaActual-1].classList.add('seleccionado');
     usuarioCambioPagina = true;
-    mostrarCritica(criticaActual);
+    cambiarCritica(true);
 })
 
 
@@ -163,10 +185,7 @@ botonSiguiente.addEventListener('click', (event) => {
 
 setInterval( () => {
     if (!usuarioCambioPagina) {
-        botonesPaginacion[criticaActual-1].classList.remove('seleccionado');
-        criticaActual = criticaActual < 6 ? criticaActual+1 : 1;
-        botonesPaginacion[criticaActual-1].classList.add('seleccionado');
-        mostrarCritica(criticaActual);
+        cambiarCritica(true);
     }
     usuarioCambioPagina = false;
 }, 5000)

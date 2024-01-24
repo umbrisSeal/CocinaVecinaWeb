@@ -30,6 +30,12 @@ h2, h3 {
     margin: 0px 0px 20px 0px;
 }
 
+.desvanecer-js {
+    opacity: 1;
+
+    transition: opacity 0.8s ease-in-out;
+}
+
 
 /*
 =============================
