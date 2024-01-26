@@ -13,6 +13,10 @@ class vistaUsuario {
         if(!$verificacion) {
             //echo 'Este usuario no existe.';
             header('Content-Type: application/json');
+
+            // Para permitir CORS:
+            header('Access-Control-Allow-Origin: *');
+
             http_response_code(200);
             echo json_encode(new Verificacion);
         } else {
