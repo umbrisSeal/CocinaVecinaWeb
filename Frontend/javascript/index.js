@@ -96,8 +96,6 @@ fetch('http://localhost:3000/criticas.php')
         }
     })
     .then( datos => {
-        console.log('Hemos recibido datos del backend!');
-        console.log(datos);
         criticas = datos;
     })
     .catch(error => console.log(`Error: ${error}`))
