@@ -3,5 +3,9 @@
 presentation.md
 somecommands.txt
 
+
+## Ignore folders that can be recovered via "composer install" in BE
+*/vendor
+
 ## Ignore enviroment variable files .env
 *.env
