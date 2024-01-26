@@ -1121,7 +1121,7 @@ header nav a:not(:last-child):hover {
 
 .empleos {
     display: flex;
-    height: 420px;
+    min-height: 420px;
 }
 
 .empleo-filtro {
