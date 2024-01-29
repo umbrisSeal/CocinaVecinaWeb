@@ -13,7 +13,7 @@ let empleos = [];
 =====================
 */
 
-fetch('http://localhost:3000/empleos.php')
+fetch('/api/empleos.php')
     .then( (respuesta) => {
         if(!respuesta.ok) {
             throw new Error(`Ha ocurrido un error ${respuesta.status}`);

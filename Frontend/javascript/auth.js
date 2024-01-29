@@ -100,7 +100,7 @@ const encriptar = async (password) => {
 */
 
 const acceder = (datos) => {
-    fetch('http://localhost:3000/usuarios.php', {
+    fetch('/api/usuarios.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

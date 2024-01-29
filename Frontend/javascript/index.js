@@ -87,7 +87,7 @@ const cambiarCritica = (incrementar, criticaSeleccionada = 0) => {
 =====================
 */
 
-fetch('http://localhost:3000/criticas.php')
+fetch('/api/criticas.php')
     .then( (respuesta) => {
         if(!respuesta.ok) {
             throw new Error(`Ha ocurrido un error ${respuesta.status}`);
