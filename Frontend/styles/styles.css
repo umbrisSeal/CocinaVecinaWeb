@@ -749,7 +749,8 @@ header nav a:not(:last-child):hover {
     justify-content: center;
     align-items: center;
 
-    height: 600px;
+    /* height: 600px; */
+    min-height: 100vh;
 }
 
 .contenedor-login {
@@ -887,6 +888,7 @@ header nav a:not(:last-child):hover {
     
     margin: 20px 50px;
     line-height: 1.4;
+    text-align: justify;
 }
 
 
@@ -904,6 +906,7 @@ header nav a:not(:last-child):hover {
 .contenedor-faq {
     width: 90%;
     margin: 35px auto;
+    min-height: 100vh;
 
     display: flex;
     flex-direction: column;
@@ -1121,7 +1124,8 @@ header nav a:not(:last-child):hover {
 
 .empleos {
     display: flex;
-    min-height: 420px;
+    /* min-height: 420px; */
+    min-height: 100vh;
 }
 
 .empleo-filtro {
